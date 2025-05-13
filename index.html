@@ -1,99 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricomida</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="assets/js/main.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand ms-4" href="#" style="font-family: 'Lobster', cursive; font-size: 37pt; color: white;">
-                Ricomida
-            </a>
-            <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-family: 'Lobster', cursive; font-size: 37pt;">Ricomida</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="color: white;">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Recetas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Recetas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <hr class="hr-custom">
-
-    <div class="card card-clean d-flex justify-content-center mx-4">
-        <div class="card card-custom">
-            <img src="assets/img/principal.jpg" class="card-img-top imagen-receta" alt="Pizza estilo Chicago">
-      
+    
+    <div class="container my-4">
+        <div class="card border-0 shadow">
+            <img src="assets/img/principal.jpg" class="card-img-top" alt="Pizza Chicago">
             <div class="card-body text-center">
-                <h5 class="titulo-receta" style="font-family: 'Cabin'; font-size: 25pt;"><strong>PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</strong></h5>
-                <hr class="hr-ajustada">
-                <p class="info-receta" style="font-family: 'Cabin'; font-size: 16pt;">110 MIN / 6 A 8 PORCIONES</p>
-                <div class="botones d-flex justify-content-center flex-wrap">
-                    <a href="#" class="btn btn-outline-dark mx-2">Enviar por correo</a>
-                    <a href="#" class="btn btn-outline-dark mx-2">Añadir a favoritos</a>
-                </div>
+                <h5 class="fw-bold" style="font-family: 'Cabin', sans-serif; font-size: 25pt;">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h5>
+                <hr>
+                <p class="mb-3" style="font-family: 'Cabin', sans-serif; font-size: 16pt;">110 MIN / 6 A 8 PORCIONES</p>
+                <a href="#" id="enviarCorreo" class="btn btn-outline-dark me-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Enviar receta por correo">Enviar por correo</a>
+                <a href="#" class="btn btn-outline-dark">Añadir a favoritos</a>
             </div>
-            <div class="card-text">
-                <h4 class="fw-bold">INGREDIENTES</h4>
-                <p class="fw-semibold">Masa</p>
-                <ul class="ps-3">
-                    <li>20 gr de levadura seca instantánea</li>
-                    <li>1 cucharadita de azúcar</li>
-                    <li>500 ml de agua tibia</li>
-                    <li>100 ml de aceite vegetal</li>
-                    <li>4 cucharadas de aceite de oliva</li>
-                    <li>65 gr harina de maíz fina (chuchoca)</li>
-                    <li>2 cucharaditas de sal</li>
-                    <li>625 gr harina</li>
-                </ul>
-                <p class="fw-semibold">Salsa</p>
-                <ul class="ps-3">
-                    <li>5 cucharadas de aceite de oliva</li>
-                    <li>1/2 cebolla picada en cubos finos</li>
-                    <li>2 cucharaditas de sal</li>
-                    <li>3 cucharadas de Orégano</li>
-                </ul>
-                <p class="fw-semibold">Gourmet</p>
-                <ul class="ps-3">
-                    <li>1 1/2 cucharadas de Albahaca</li>
-                    <li>2 tarro de tomates en cubo al natural</li>
-                    <li>2 cucharaditas de azúcar relleno</li>
-                    <li>1/2 cebolla en cubos</li>
-                    <li>500 gr hojas de espinacas picadas</li>
-                    <li>400 gr de champiñones laminados</li>
-                    <li>300 gr de queso mozarella</li>
+
+            
+            <div class="px-4 py-3">
+                <h4 class="fw-bold ingredientes">INGREDIENTES</h4>
+                <p class="fw-semibold mt-3">Masa</p>
+                <ul>
+                    <li>20 gr levadura seca instantánea</li>
+                    <li>1 cdita azúcar</li>
+                    <li>500 ml agua tibia</li>
+                    <li>100 ml aceite vegetal</li>
                 </ul>
 
+                <p class="fw-semibold mt-3">Salsa</p>
+                <ul>
+                    <li>5 cdas aceite oliva</li>
+                    <li>1/2 cebolla picada</li>
+                    <li>2 cdas orégano</li>
+                </ul>
+
+                <p class="fw-semibold mt-3">Gourmet</p>
+                <ul>
+                    <li>1 1/2 cdas albahaca</li>
+                    <li>2 tarros tomate en cubos</li>
+                    <li>400 gr champiñones laminados</li>
+                </ul>
+            </div>
+
+            
+            <div class="px-4 py-3">
+                <h4 class="fw-bold preparacion">PREPARACIÓN</h4>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande.
+                         Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. 
+                         Amasar y agregar el resto de harina, la cantidad necesaria para tener una masa blanda. Poner en el mesón
+                          y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se
+                           va amasando para que la masa no se pegue) . Poner la masa en un bol aceitado, tapar con un paño de cocina
+                            limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y 
+                            luego dejar leudar por 40 minutos adicionales.</li>
+                    <li class="list-group-item">Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a 
+                        fuego medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla esté 
+                        dorada. Agregar el ajo y cocinar por 30 segundos. Agregar los tomates junto al jugo del tarro, a la mezcla de 
+                        cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como 30 minutos. Sazonar 
+                        con sal y pimienta a gusto. Reservar.</li>
+                    <li class="list-group-item">Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. 
+                        Agregar los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el líquido que hayan votado los vegetales. Reservar. </li>
+                    <li class="list-group-item">Calentar el horno a 220C.</li>
+                    <li class="list-group-item">Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada 
+                        masa para cubrir dos moldes (desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el 
+                        relleno entre las dos pizza, tapar con el queso mozarella, luego terminar con la salsa de tomates y 
+                        finalmente espolvorear el queso rallado.</li>
+                    <li class="list-group-item">Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa
+                         y dorada. Esperar unos minutos antes de desmoldar.</li>
+
+                </ol>
             </div>
         </div>
     </div>
 
+    
+    <div class="container my-4">
+        <h5 class="text-center fw-bold" style="font-family: 'Cabin', sans-serif; font-size: 25pt;">RECETAS RELACIONADAS</h5>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="Panqueques">
+                    <div class="card-body">
+                        <h5 class="fw-bold toggle-card">PANQUEQUES CON MANJAR</h5>
+                        <p>Receta deliciosa para disfrutar en casa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="Tiramisú">
+                    <div class="card-body">
+                        <h5 class="fw-bold toggle-card">TIRAMISÚ</h5>
+                        <p>Postre clásico italiano fácil de preparar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="Plateada">
+                    <div class="card-body">
+                        <h5 class="fw-bold toggle-card">PLATEADA</h5>
+                        <p>Mus enim elementum dignissim justo nostra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-
-
+    
+    <div class="container my-4">
+        <div class="newsletter-card text-center">
+            <div class="newsletter-header py-4">
+                <h4 class="fw-bold">SUSCRÍBETE EN<br>NUESTRO NEWSLETTER</h4>
+                <p>y obtén las mejores recetas<br>que tenemos en <em>Ricomida</em></p>
+                <button class="btn btn-outline-light newsletter-button mt-3">Empezar</button>
+            </div>
+            <div class="newsletter-footer py-2">
+                Ricomida
+            </div>
+        </div>
+    </div>
 </body>
-</html>
+</html>  

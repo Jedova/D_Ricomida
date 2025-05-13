@@ -1,42 +1,92 @@
 
 .navbar-dark .nav-link {
     color: white !important;
-  }
-  
-  .navbar-dark .nav-link:hover,
-  .navbar-dark .nav-link:focus {
-    color: #f8f9fa !important;
+}
+
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link:focus {
+    color: #dddddd !important;
     text-decoration: underline;
-  }
-  
-  .navbar-dark .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5); /* borde blanco semitransparente */
-  }
+}
 
-  .navbar-dark .navbar-toggler-icon {
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
+}
 
-  .card-clean {
-    border: none;
-    box-shadow: none;
-  }
 
-  .card-custom {
-    border: none;
-    box-shadow: none;
-  }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cabin', sans-serif;
+    color: #373a3c;
+}
 
-  .hr-custom {
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+
+hr {
+    border: 2px solid #000;
     width: 90%;
     margin: 1.25rem auto;
-    border: 2px solid #000000;
-  }
-  
-  .hr-ajustada {
-    width: 90%; 
-    margin: 1rem auto;
-    border: 2px solid #000000;
-  }
-  
-  
+}
+
+
+.newsletter-card {
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.newsletter-header,
+.newsletter-header * {
+    color: white !important;
+   background-color: #dc3545;
+}
+
+
+.newsletter-footer {
+    background-color: #333;
+    color: white;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+.newsletter-button {
+    border-color: white;
+    color: white;
+}
+
+.newsletter-button:hover {
+    background-color: white;
+    color: #dc3545;
+}
+
+.card {
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+    object-fit: cover;
+}
+
+
+.btn[data-bs-toggle="tooltip"] {
+    cursor: pointer;
+}
+
+
+.ingredientes, .preparacion {
+    cursor: pointer;
+}
+
+.toggle-card {
+    cursor: pointer;
+}
